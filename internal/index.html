@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Solid waste management</title>
+    </head>
+    <body>
+        <h1 style="text-align:center; color: white; background-color: #006400;">Solid Waste Management</h1>
+        <p style="text-align: justify; width: 1000px; margin: 0 25%; font-size:120%;">The increasing volume and complexity of waste associated with the modern economy is posing a serious risk to ecosystems and human health. Every year, an estimated 11.2 billion tonnes of solid waste is collected worldwide and decay of the organic proportion of solid waste is contributing about 5 per cent of global greenhouse gas emissions. Every year, an estimated 11.2 billion tons of solid waste are collected worldwide. Of all the waste streams, waste from electrical and electronic equipment containing new and complex hazardous substances presents the fastest-growing challenge in both developed and developing countries.
+        </p>
+        <h2 style="text-align: center;">Be sure to dispose off your solid waste in a proper manner, and take care of our environment</h2>
+        <h3 style="text-align: center;">You can select the type of waste you want to dispose and we can provide you with details of people who specialise in that kind of waste management</h3>
+        <form style="margin: 0 25%;">
+            <label for="type">Select your waste type:</label>
+            <br>
+            <br>
+            <select id="waste-type" name="waste-type">
+                <option value="computer electronics">computer electronics</option>
+                <option value="single use plastics">single use plastics</option>
+                <option value="plastic household items">plastic household items</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="submit" onclick="getValues()">
+        </form>
+
+        <form style="margin: 0 25%;">
+            <h3>Contact Details</h3>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="contact-number">Contact number</label><br>
+            <input type="text" id="contact-number" name="contact-number"><br><br>
+            <label for="area">Area</label><br>
+            <input type="text" id="area" name="area">
+        </form>
+
+        <br><br><h3 style="text-align: center;">If you want to become a dealer in valuable scraps, enter your details below:</h3>
+
+        <form style="margin: 0 25%;">
+            <h4>Details</h3>
+            <label for="newname">Name</label><br>
+            <input type="text" id="newname" name="newname"><br><br>
+            <label for="newname">What do you deal in?</label><br>
+            <br>
+            <select id="new-waste-type" name="waste-type">
+                <option value="computer electronics">computer electronics</option>
+                <option value="single use plastics">single use plastics</option>
+                <option value="plastic household items">plastic household items</option>
+            </select>
+            <br>
+            <br>
+            <label for="new-contact-number">Contact number</label><br>
+            <input type="text" id="new-contact-number" name="new-contact-number"><br><br>
+            <label for="newarea">Area</label><br>
+            <input type="text" id="newarea" name="newarea"><br><br>
+            <input type="button" value="submit" onclick="submitDetails()">
+        </form>
+        <br>
+        <br>
+    </body>
+    <script src="index.js"></script>
+</html>
